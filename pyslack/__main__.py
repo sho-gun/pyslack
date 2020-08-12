@@ -16,10 +16,15 @@ def main():
         print('Environment Variable "SLACK_WEBHOOK" does not exists.')
         exit(1)
 
+    python_command = os.environ.get('PYSLACK_PYTHON')
+
     if len(sys.argv) > 1:
         args = ['python3'] + sys.argv[1:]
         if platform.system() == 'Windows':
             args[0] = 'py'
+
+        if python_command is not None:
+            args[0] = python_command
 
         slack = slackweb.Slack(url=url)
         slack.notify(text='START: ' + makeStr(args))

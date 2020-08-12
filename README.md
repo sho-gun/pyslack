@@ -18,3 +18,8 @@ py -m pip install git+https://github.com/sho-gun/pyslack
 ```
 pyslack YOUR_PYTHON_SCRIPT.py
 ```
+
+### Appendix
+Default python commands are: "python3" for Linux / Mac, and "py" for Windows.
+
+If you want to use other commands, you can define it as environment variable PYSLACK_PYTHON.
