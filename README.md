@@ -28,6 +28,7 @@ pyslack YOUR_PYTHON_SCRIPT.py
 Default python commands are: "python3" for Linux / Mac, and "py" for Windows.
 
 If you want to use other commands, you can define it as environment variable PYSLACK_PYTHON.
+For example, if you want to use "python" instead of "python3":
 ```
 # Linux / Mac
 export PYSLACK_PYTHON="python"
